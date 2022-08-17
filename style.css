@@ -1,0 +1,39 @@
+:root {
+    --default: #1E1014;
+    --tiles: #2E2628;
+    --tiles-alt: #544b4d;
+    --text: white;
+    --subtitle: #95A3B3;
+}
+
+body {
+    background-color: var(--default);
+    color: var(--text);
+}
+
+ul {
+    list-style: none;
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--subtitle);
+} */
+
+p {
+    font-size: 4rem;
+}
+
+div {
+    background-color: var(--tiles);
+}
+
+/* .main {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+} */
