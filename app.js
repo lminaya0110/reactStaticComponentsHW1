@@ -27,7 +27,7 @@ class Sidebar extends React.Component {
 class Reviews extends React.Component {
     render() {
         return (
-            <div>
+            <div className="reviews">
                 <h3>Reviews</h3>
                 <p>1,281</p>
             </div>
@@ -38,7 +38,7 @@ class Reviews extends React.Component {
 class AvgRating extends React.Component {
     render() {
         return (
-            <div>
+            <div className="avgrating">
                 <h3>Average Rating</h3>
                 <p>4.6</p>
             </div>
@@ -49,7 +49,7 @@ class AvgRating extends React.Component {
 class SentAn extends React.Component {
     render() {
         return (
-            <div>
+            <div className="sentan">
                 <h3>Sentiment Analysis</h3>
                 <ul>
                     <li>960</li>
@@ -99,7 +99,7 @@ class Content extends React.Component {
 class App extends React.Component {
     render() {
         return (
-            <div>
+            <div className="app">
                 <Sidebar />
                 <Content />
             </div>
