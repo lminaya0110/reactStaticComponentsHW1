@@ -9,7 +9,7 @@
 class Sidebar extends React.Component {
     render() {
         return (
-            <div>
+            <div className="sidebar">
                 <h3>Dashboard</h3>
                 <ul>
 
@@ -64,10 +64,10 @@ class SentAn extends React.Component {
 class WebVisitors extends React.Component {
     render() {
         return (
-            <div>
+            <div className="webVisitors">
                 <h3>Website Visitors</h3>
                 <p>821</p>
-                <div></div>
+                <div className="webVisDiv"></div>
             </div>
         )
     }
@@ -76,10 +76,21 @@ class WebVisitors extends React.Component {
 class Stats extends React.Component {
     render() {
         return (
-            <div>
+            <div className="stats">
                 <Reviews />
                 <AvgRating />
                 <SentAn />
+            </div>
+        )
+    }
+}
+
+class Content extends React.Component {
+    render() {
+        return (
+            <div className="content">
+                <Stats />
+                <WebVisitors />
             </div>
         )
     }
@@ -90,8 +101,7 @@ class App extends React.Component {
         return (
             <div>
                 <Sidebar />
-                <Stats />
-                <WebVisitors />
+                <Content />
             </div>
         )
     }

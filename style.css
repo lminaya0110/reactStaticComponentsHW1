@@ -9,10 +9,12 @@
 body {
     background-color: var(--default);
     color: var(--text);
+    height: 100%;
 }
 
 ul {
     list-style: none;
+    align-items: center;
 }
 
 h3 {
@@ -24,16 +26,41 @@ p {
     font-size: 4rem;
 }
 
-div {
-    background-color: var(--tiles);
+.main {
+    height: 100%;
+    width: 100%;
 }
 
-/* .main {
-    display: flex;
-    flex-direction: column;
+.content {
+    width: 60%;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: var(--tiles);
+    height: 100vh;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid var(--tiles);
+    border-radius: 6px;
+    
 }
 
 .stats {
-    display: flex;
-    flex-direction: row;
-} */
+}
+
+.stats, .webVisitors {
+    height: 50%;
+    width: 60%;
+}
+
+.webVisitors {
+
+    background-color: var(--tiles);
+}
+
+.webVisDiv {
+    background-color: var(--tiles-alt);
+
+}
